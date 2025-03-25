@@ -1,0 +1,8 @@
+(module "HDR 2x10" (layer F.Cu) (tedit 5B0D3C36)
+  (fp_line (start 12.70000 2.54000) (end 12.70000 -2.54000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -12.70000 2.54000) (end -10.79500 2.54000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -12.70000 2.54000) (end -12.70000 -2.54000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -12.70000 -2.54000) (end -10.79500 -2.54000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -10.79500 -2.54000) (end 12.70000 -2.54000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -10.79500 2.54000) (end 12.70000 2.54000) (layer Cmts.User) (width 0.2))
+)

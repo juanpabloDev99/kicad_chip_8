@@ -1,0 +1,6 @@
+(module "HDR 1x08" (layer F.Cu) (tedit 5B0D3C36)
+  (fp_line (start 10.16000 1.27000) (end 10.16000 -1.27000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -10.16000 1.27000) (end 10.16000 1.27000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -10.16000 1.27000) (end -10.16000 -1.27000) (layer Cmts.User) (width 0.2))
+  (fp_line (start -10.16000 -1.27000) (end 10.16000 -1.27000) (layer Cmts.User) (width 0.2))
+)

@@ -1,0 +1,95 @@
+(footprint "PS17_1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "PS17")
+	(tags "Loudspeaker or Buzzer")
+	(property "Reference" "LS**"
+		(at -0.28 -0.054 0)
+		(layer "F.SilkS")
+		(uuid "5e0d4fe6-38a1-441e-9cb6-5b066ed8391c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "PS17_1"
+		(at -0.28 -0.054 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "44eafe68-9eb0-4e70-8fca-722faff0ce2c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "002da1f0-0feb-4cd8-95b1-6cff632f4a92")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "81f2dd07-a68f-4752-9d5a-50fb99ce4881")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center -9.326 -0.054)
+		(end -9.326 0.09)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "055693c4-ac9e-432d-87dc-6bb1e4d7bc5a")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 8.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "38861127-9af8-4a96-9ac0-d67417a2169c")
+	)
+	(pad "1" thru_hole circle
+		(at -5 0)
+		(size 1.58 1.58)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "605bc7bd-e6e3-4053-9f62-63bc2045fcc0")
+	)
+	(pad "2" thru_hole circle
+		(at 5 0)
+		(size 1.58 1.58)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "84deaeb4-75ca-433d-8104-1ed393082d3c")
+	)
+	(embedded_fonts no)
+)
