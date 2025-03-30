@@ -2375,6 +2375,229 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Battery"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Multiple-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "batt voltage-source cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.286 -1.27)
+					(end 2.286 -1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 -2.032)
+					(end 1.524 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ERA-8VRB1002V:ERA-8VRB1002V"
 			(pin_names
 				(hide yes)
@@ -6162,6 +6385,12 @@
 		(uuid "28f27919-79e0-44a1-80e1-462e02f6287c")
 	)
 	(junction
+		(at 381 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c597a14-66d7-41ca-9a85-07690bfed685")
+	)
+	(junction
 		(at 369.57 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6976,6 +7205,26 @@
 			(type default)
 		)
 		(uuid "25d0afce-72d7-431b-8169-26128e2902aa")
+	)
+	(wire
+		(pts
+			(xy 381 109.22) (xy 381 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25ddc569-13d5-48ca-b1ee-7f90c29e0ecc")
+	)
+	(wire
+		(pts
+			(xy 386.08 111.76) (xy 381 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f28b5c-b349-4ed5-bbdd-b4668aac79e2")
 	)
 	(wire
 		(pts
@@ -8487,6 +8736,16 @@
 		)
 		(uuid "cee20b2c-0d41-45d5-b2ec-4dfe616e69ff")
 	)
+	(wire
+		(pts
+			(xy 386.08 109.22) (xy 381 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf1035ee-1dc8-4ba5-a85d-c887a89b460c")
+	)
 	(bus
 		(pts
 			(xy 22.86 95.25) (xy 33.02 95.25)
@@ -8676,6 +8935,16 @@
 			(type default)
 		)
 		(uuid "ef266cc4-3aa0-4025-ba93-3d2b25dbbf23")
+	)
+	(wire
+		(pts
+			(xy 381 111.76) (xy 381 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7a0ead-f17f-478a-9e71-71ee8fa6faeb")
 	)
 	(wire
 		(pts
@@ -10271,6 +10540,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 391.16 109.22 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17e4f61a-cc0e-432c-9b12-6e4cee9746e8")
+		(property "Reference" "batt1"
+			(at 387.096 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 392.43 115.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 391.16 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 391.16 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 391.16 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "816ca97e-3cce-4032-a18f-86832d52e927")
+		)
+		(pin "2"
+			(uuid "887589a5-a954-4863-989e-9c4479a6e5ba")
+		)
+		(instances
+			(project "Untitled"
+				(path "/49a0b26b-69c2-4e6f-b834-55774703b867"
+					(reference "batt1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "IHLP5050CEER100M01:IHLP5050CEER100M01")
 		(at 326.39 176.53 0)
 		(unit 1)
@@ -11809,6 +12146,76 @@
 			(project "Untitled"
 				(path "/49a0b26b-69c2-4e6f-b834-55774703b867"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery")
+		(at 257.81 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5632c0ea-4d4f-4ede-9d48-d9249ff2e38e")
+		(property "Reference" "BAT1"
+			(at 261.62 142.9384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery"
+			(at 261.62 145.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 143.256 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 257.81 143.256 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Multiple-cell battery"
+			(at 257.81 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe7d74b8-9cce-4e0a-b548-15f4746fa1df")
+		)
+		(pin "2"
+			(uuid "0b09640d-1e4c-4c6e-82d9-ed62fe924622")
+		)
+		(instances
+			(project ""
+				(path "/49a0b26b-69c2-4e6f-b834-55774703b867"
+					(reference "BAT1")
 					(unit 1)
 				)
 			)
@@ -14096,8 +14503,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bbb343cf-197f-4efc-84c5-9f62668a773a")
-		(property "Reference" "aaaa1"
-			(at 229.108 116.078 0)
+		(property "Reference" "buzz1"
+			(at 230.632 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14148,7 +14555,7 @@
 		(instances
 			(project ""
 				(path "/49a0b26b-69c2-4e6f-b834-55774703b867"
-					(reference "aaaa1")
+					(reference "buzz1")
 					(unit 1)
 				)
 			)
@@ -16264,6 +16671,72 @@
 			(project "Untitled"
 				(path "/49a0b26b-69c2-4e6f-b834-55774703b867"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 381 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4774d25-09ff-4f2d-9829-e87be9201d00")
+		(property "Reference" "#PWR026"
+			(at 381 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 381 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfe5a87b-a2e3-4d0c-a533-03a1aed6e8ca")
+		)
+		(instances
+			(project "Untitled"
+				(path "/49a0b26b-69c2-4e6f-b834-55774703b867"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
